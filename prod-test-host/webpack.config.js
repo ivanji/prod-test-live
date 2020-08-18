@@ -39,7 +39,7 @@ module.exports = (_, argv) => ({
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {
-        "./CarWidget": "./src/components/CarWidget",
+        "./CarWidget": "./src/components/CardWidget",
       },
       shared: require("./package.json").dependencies,
     }),
