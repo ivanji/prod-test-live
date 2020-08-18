@@ -2,7 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import "./index.css";
+import CardWidget from "./components/CardWidget";
 
-const App = () => <div>Hi there, I'm React from Webpack 5.</div>;
+const App = () => (
+  <div>
+    <CardWidget />
+  </div>
+);
 
 ReactDOM.render(<App />, document.getElementById("app"));
