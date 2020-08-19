@@ -35,11 +35,12 @@ module.exports = (_, argv) => ({
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "starter",
+      name: "designSystem",
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {
         "./CarWidget": "./src/components/CardWidget",
+        "./Header": "./src/components/Header",
       },
       shared: require("./package.json").dependencies,
     }),
